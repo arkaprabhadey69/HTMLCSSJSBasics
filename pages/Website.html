@@ -1,65 +1,69 @@
 <!doctype html>
 <title>Example</title>
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<html>
 
-    body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: row;
-        margin: 0;
-    }
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    .col-1 {
-        background: #D7E8D4;
-        flex: 1;
-    }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
 
-    .col-2 {
-        display: flex;
-        flex-direction: column;
-        flex: 5;
-    }
+        .col-1 {
+            background: #D7E8D4;
+            flex: 1;
+        }
 
-    .col-3 {
-        flex-direction: column;
-    }
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
 
-    .content {
-        display: flex;
-        background: coral;
-    }
+        .col-3 {
+            flex-direction: column;
+        }
 
-    .col-3>article {
-        flex: 1;
-        padding: 10px;
-        margin: 10px;
-        background: lightgreen;
+        .content {
+            display: flex;
+            background: coral;
+        }
 
-    }
+        .col-3>article {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background: lightgreen;
 
-    .content>aside {
-        background: lightblue;
-        flex: 1;
-    }
+        }
 
-    header,
-    footer {
-        background: yellowgreen;
-        height: 20vh;
-        text-align: center;
-    }
+        .content>aside {
+            background: lightblue;
+            flex: 1;
+        }
 
-    header,
-    footer,
-    article,
-    nav,
-    aside {
-        padding: 1em;
-    }
-</style>
+        header,
+        footer {
+            background: yellowgreen;
+            height: 20vh;
+            text-align: center;
+        }
+
+        header,
+        footer,
+        article,
+        nav,
+        aside {
+            padding: 1em;
+        }
+    </style>
+</head>
 
 <body>
     <nav class="col-1">
@@ -71,7 +75,9 @@
         </ul>
     </nav>
     <div class="col-2">
-        <header><h1>Quotes of the Day!</h1></header>
+        <header>
+            <h1>Quotes of the Day!</h1>
+        </header>
         <main class="content">
             <div class="col-3">
                 <article>
@@ -94,3 +100,5 @@
         <footer>Footer</footer>
     </div>
 </body>
+
+</html>
