@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Intro</title>
+    <style>
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: green;
+            font-weight: bold;
+            padding: 10px;
+
+        }
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            font-weight: bold;
+
+        }
+        .mainContetItem {
+            text-align: left;
+            background-color: deepskyblue;
+        }
+        article {
+            padding: 10px;
+            margin: 10px;
+            /*border: blue;*/
+            background: aqua;
+        }
+        .sideBarLeft {
+            background: gold;
+
+        }
+        .sideBarRight {
+            background:deeppink;
+            
+        }
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid black;
+            text-align: center;
+        }
+        .mainContetItem{
+            flex: 3 0px;
+            }
+         .sideBarLeft{order: 1;}
+        .mainContetItem{order: 2;}
+        .sideBarRight{order: 3;} 
+
+
+    </style>
+</head>
+<body>
+    <header class="headerContainer"><h1>Header-Sample FlexBox Container</h1></header>
+   <div class="mainContainer">
+       <section class="mainContetItem">
+           <article>
+               <h2>First Article</h2>
+               <p>Life has no meaning a priori… It is up to you to give it a meaning, and value is nothing but the meaning that you choose.</p>
+           </article>
+           <article>
+            <h2>Second Article</h2>
+            <p>A weird time in which we are alive. We can travel anywhere we want, even to other planets. And for what? To sit day after day, declining in morale and hope.</p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>Youth ends when egotism does; maturity begins when one lives for others.</p>
+        </article>
+       </section>
+       <sidebar class="sideBarItem sideBarLeft">Left Side Bar</sidebar>
+       <sidebar class="sideBarItem sideBarRight">Right Side Bar</sidebar>
+
+   </div>
+   <footer class="footerContainer">Footer</footer>
+   
+</body>
+</html>
