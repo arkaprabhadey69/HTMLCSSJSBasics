@@ -48,7 +48,7 @@ error-output {
     background: red;
 }
 
-@media only screen and (max-width:360px){
+@media only screen and (max-width:360px) and (min-width:321px){
     h1 {
         font-size: 40px;
         text-align: center;
@@ -57,5 +57,31 @@ error-output {
         font-size: 12px;
         width: 30%;
         
+    }
+}
+@media only screen and (max-width:320px) and (min-width:281px){
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    label{
+        font-size: 9px;
+        width: 30%;
+        
+    }
+}
+@media only screen and (max-width:280px){
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    label {
+        font-size: 12px;
+        width: 50%;
+        
+    }
+    input {
+        font-size: 12px;
+        width: 65%;
     }
 }
