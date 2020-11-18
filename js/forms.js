@@ -40,7 +40,7 @@ email.oninput = function () {
     else
         emailError.textContent = "Email is Incorrect!"
 };
-
+//Method to check using onclick
 function checkEmail(){
     var email = document.getElementById('email').value;
     let emailRegEx= RegExp('^[a-zA-Z]+([._+-]{0,1}[a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[(com)|(co)|(net)]+(?:\\.[a-z]{2,}){0,1}$');
