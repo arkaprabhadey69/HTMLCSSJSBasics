@@ -40,6 +40,18 @@ email.oninput = function () {
     else
         emailError.textContent = "Email is Incorrect!"
 };
+
+function checkEmail(){
+    var email = document.getElementById('email').value;
+    let emailRegEx= RegExp('^[a-zA-Z]+([._+-]{0,1}[a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[(com)|(co)|(net)]+(?:\\.[a-z]{2,}){0,1}$');
+    if(!emailRegEx.test(email)){
+ alert('Incorrect Email');
+ return false;
+   }
+   else
+   return true;
+
+}
 const salary=document.querySelector('#salary');
 const output=document.querySelector('.salary-output');
 salary.addEventListener('input', function(){
